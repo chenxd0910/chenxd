@@ -1,31 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-CSP复现_总脚本.py
-=================
-《K线形态信息中的alpha》CSP 因子复刻与多因子实证 —— 单文件完整实现。
-
-本脚本把数据读取、K 线形态构建、CSP 因子、因子检验、周度多因子回测、
-图表生成与 Word 报告生成全部整合在一个文件中，运行一次即可得到报告中的
-全部结果（表格、图片、results.json 与 docx 报告）。
-
-目录约定（脚本放在“期末作业”文件夹下）::
-
-    期末作业/
-    ├── CSP复现_总脚本.py          # 本文件
-    ├── 数据/
-    │   ├── 原始数据/              # 课程提供的 24 个 CSV
-    │   └── 处理后数据/            # 脚本生成
-    ├── 结果/                      # 脚本生成（tables/figures/series/results.json）
-    └── 202630196102-...docx       # 脚本生成
-
-运行::
-
-    python CSP复现_总脚本.py
-
-依赖：numpy、pandas、scipy、matplotlib、python-docx；
-公式排版另需 latex2mathml 与 Microsoft Office 的 MML2OMML.XSL
-（缺失时自动回退为文本公式，其余功能不受影响）。
-"""
 import json
 import os
 import re
